@@ -7,7 +7,16 @@
                     Datas #01
                 </a>
             </li>
-            
+            <li>
+                <a href="exercicio.php?dir=api&file=datas_02">
+                    Datas #02
+                </a>
+            </li>             
+            <li>
+                <a href="exercicio.php?dir=api&file=escrever_arquivos">
+                    Escrevendo Arquivos
+                </a>
+            </li>             
         </ul>
     </div>
     <div class="modulo vermelho">

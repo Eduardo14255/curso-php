@@ -10,7 +10,7 @@ if (!$_SESSION['usuario']) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="PT-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
