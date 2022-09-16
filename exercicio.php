@@ -28,7 +28,7 @@ if (!$_SESSION['usuario']) {
     </header>
     <nav class="navegacao">
         <span class="usuario"> Usuario: <?= $_SESSION['usuario'] ?></span>
-        <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?> class="verde">Sem formatação</a>
+        <!-- <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?> class="verde">Sem formatação</a> -->
         <a href="index.php">Voltar</a>
         <a href="logout.php" class="vermelho">Sair</a>
     </nav>
