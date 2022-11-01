@@ -1,4 +1,14 @@
 <nav class="modulos">
+    <div class="modulo roxo">
+        <h3>14. Formulario</h3>
+        <ul>
+            <li>
+                <a href="exercicio.php?dir=formulario&file=formulario">
+                   Formulario
+                </a>
+            </li>
+        </ul>
+    </div>
     <div class="modulo azul">
         <h3>13. API</h3>
         <ul>
@@ -11,32 +21,32 @@
                 <a href="exercicio.php?dir=api&file=datas_02">
                     Datas #02
                 </a>
-            </li>             
+            </li>
             <li>
                 <a href="exercicio.php?dir=api&file=escrever_arquivos">
                     Escrevendo Arquivos
                 </a>
-            </li>             
+            </li>
             <li>
                 <a href="exercicio.php?dir=api&file=ler_arquivo">
                     Ler Arquivos
                 </a>
-            </li>             
+            </li>
             <li>
                 <a href="exercicio.php?dir=api&file=uploud">
                     Uploud de Arquivo
                 </a>
-            </li>             
+            </li>
             <li>
                 <a href="exercicio.php?dir=api&file=download">
                     Download de Arquivo
                 </a>
-                </li>      
-                <li>
+            </li>
+            <li>
                 <a href="exercicio.php?dir=api&file=imagens">
                     Desafio Imagens
                 </a>
-            </li>             
+            </li>
         </ul>
     </div>
     <div class="modulo vermelho">
@@ -49,7 +59,7 @@
             </li>
             <li>
                 <a href="exercicio.php?dir=sessao&file=gerenciando_sessao">
-                   Gerenciando Sessão
+                    Gerenciando Sessão
                 </a>
             </li>
         </ul>
@@ -59,7 +69,7 @@
         <ul>
             <li>
                 <a href="exercicio.php?dir=tratamento_erro&file=try_catch">
-                    Try/catch  
+                    Try/catch
                 </a>
             </li>
             <li>
