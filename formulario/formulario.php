@@ -7,11 +7,37 @@
 if (count($_POST) > 0) {
     //if(isset($_POST['nome']))
     if (!filter_input(INPUT_POST, "nome")) {
-        echo 'Nome é obrigatorio"",<br>';
+        echo 'Nome é obrigatorio!!', '<br>';
+    }
+
+    if (filter_input(INPUT_POST, "nascimento")) {
+        $data = DateTime::createFromFormat('d/m/Y', $_POST['nascimento']);
+        if (!$data) {
+            echo 'Data deve estar no padrão dd/mm/aaaa', '<br>';
+        }
+    }
+
+    if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+        echo 'Email inválido', '<br>';
+    }
+
+    if (!filter_var($_POST['site'], FILTER_VALIDATE_URL)) {
+        echo 'Site inválido', '<br>';
+    }
+    $filhosConfig = ["options" => ["min_range" => 0, "max_range" => 20]];
+
+    if (!filter_var($_POST['filhos'], FILTER_VALIDATE_INT, $filhosConfig) && $_POST['filhos'] != 0) {
+        echo 'Quatidade de filhos inválida', '<br>';
+    }
+
+    $salarioConfig = ['options' => ['decimal' => ',']];
+    if (!filter_var($_POST['salario'], FILTER_VALIDATE_FLOAT, $salarioConfig)){
+        echo 'Salario Deve ser descrito com "," ','<br>';
     }
 }
 ?>
-<form action="#" method="POST">
+
+<form action="#" method="post">
 
     <div class="form-row">
         <div class="form-group col-md-9">
@@ -28,7 +54,7 @@ if (count($_POST) > 0) {
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="email">E-mail</label>
-            <input type="text" name="email" id="email" placeholder="E-mail" class="form-control" value="<?= $_POST['email'] ?>">
+            <input type="email" name="email" id="email" placeholder="E-mail" class="form-control" value="<?= $_POST['email'] ?>">
         </div>
 
         <div class="form-group col-md-6">
@@ -40,12 +66,12 @@ if (count($_POST) > 0) {
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="filhos">Quantidade de filhos</label>
-            <input type="text" name="filhos" id="filhos" placeholder="Quantidade de filhos" class="form-control" value="<?= $_POST['filhos'] ?>">
+            <input type="number" name="filhos" id="filhos" placeholder="Quantidade de filhos" class="form-control" value="<?= $_POST['filhos'] ?>">
         </div>
 
         <div class="form-group col-md-6">
             <label for="salario">Salário</label>
-            <input type="text" name="salario" id="salario" placeholder="Salário" class="form-control" value="<?= $_POST['filhos'] ?>">
+            <input type="text" name="salario" id="salario" placeholder="Salário" class="form-control" value="<?= $_POST['salario'] ?>">
 
         </div>
     </div>
