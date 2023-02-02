@@ -3,6 +3,16 @@
         <h3>15. Banco de Dados</h3>
         <ul>
             <li>
+                <a href="exercicio.php?dir=db&file=excluir2">
+                Excluir Registros 2
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=excluir1">
+                Excluir Registros 1
+                </a>
+            </li>
+            <li>
                 <a href="exercicio.php?dir=db&file=consultar">
                     Consultar Registros
                 </a>
