@@ -3,6 +3,11 @@
         <h3>15. Banco de Dados</h3>
         <ul>
             <li>
+                <a href="exercicio.php?dir=db&file=alterar">
+                Alterar Registro
+                </a>
+            </li>
+            <li>
                 <a href="exercicio.php?dir=db&file=excluir2">
                 Excluir Registros 2
                 </a>
@@ -30,6 +35,11 @@
             <li>
                 <a href="exercicio.php?dir=db&file=inserir_1">
                     Inserir Registro #01
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=incluir_2">
+                    Inserir Registro #02
                 </a>
             </li>
         </ul>
